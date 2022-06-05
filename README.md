@@ -1,5 +1,7 @@
 # SvelteKit Blog
 
+Link: https://blog-sveltekit.netlify.app
+
 This project (and its tutorial) showcases the following features of SvelteKit:
 
 - fixed and dynamic routes
