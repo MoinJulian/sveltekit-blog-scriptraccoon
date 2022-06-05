@@ -21,6 +21,6 @@ This project (and its tutorial) showcases the following features of SvelteKit:
 - prefetching pages
 - deployment to netlify
 
-The blog posts are stored as markdown files on the server and are rendered as html pages using [marked](https://www.npmjs.com/package/marked). The metadata from the markdown files are extracted with [parse-md](https://www.npmjs.com/package/parse-md).
+The blog posts are stored as markdown files on the server and are rendered as html pages using [marked](https://www.npmjs.com/package/marked). The metadata from the markdown files are extracted with [markdown-yaml-metadata-parser](https://www.npmjs.com/package/markdown-yaml-metadata-parser).
 
-This project is very much inspired by [svelte-kit-blog-demo](https://github.com/svelteland/svelte-kit-blog-demo).
+This project is very much inspired by [svelte-kit-blog-demo](https://github.com/svelteland/svelte-kit-blog-demo). A quite different approach is taken [here](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog) with the preprocessor [mdsvex](https://www.npmjs.com/package/mdsvex).

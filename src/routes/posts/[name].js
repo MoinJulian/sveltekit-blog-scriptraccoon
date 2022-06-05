@@ -1,5 +1,5 @@
 import { marked } from "marked";
-import parseMD from "parse-md";
+import metadataParser from "markdown-yaml-metadata-parser";
 import fs from "fs";
 
 export async function get({ params }) {
@@ -7,7 +7,7 @@ export async function get({ params }) {
     const fileContents = fs.readFileSync(`src/posts/${name}.md`, {
         encoding: "utf8",
     });
-    const { metadata, content } = parseMD(fileContents);
+    const { metadata, content } = metadataParser(fileContents);
     const htmlContent = marked(content);
     return {
         body: { metadata, htmlContent },

@@ -32,8 +32,9 @@
     <a href="https://www.npmjs.com/package/marked" target="_blank"
         ><tt>marked</tt></a
     >. The metadata from the markdown files are extracted with
-    <a href="https://www.npmjs.com/package/parse-md" target="_blank"
-        ><tt>parse-md</tt></a
+    <a
+        href="https://www.npmjs.com/package/markdown-yaml-metadata-parser"
+        target="_blank"><tt>markdown-yaml-metadata-parser</tt></a
     >.
 </p>
 <p>

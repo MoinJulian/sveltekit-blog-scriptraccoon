@@ -1,5 +1,5 @@
 import fs from "fs";
-import parseMD from "parse-md";
+import metadataParser from "markdown-yaml-metadata-parser";
 
 export async function get() {
     const metadatas = JSON.stringify(
@@ -12,7 +12,7 @@ export async function get() {
                         encoding: "utf8",
                     }
                 );
-                const { metadata } = parseMD(fileContents);
+                const { metadata } = metadataParser(fileContents);
                 return {
                     ...metadata,
                     fileName: fileName.replace(".md", ""),
