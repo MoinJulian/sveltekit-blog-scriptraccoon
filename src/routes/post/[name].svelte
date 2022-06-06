@@ -8,8 +8,11 @@
     <title>{metadata.title}</title>
 </svelte:head>
 
-<p class="date">
-    {formatDate(metadata.date)}
+<p class="header">
+    <span class="date">
+        {formatDate(metadata.date)}
+    </span>
+    <a href="/posts">all posts</a>
 </p>
 
 {@html htmlContent}
@@ -17,6 +20,10 @@
 <style>
     .date {
         color: var(--gray-color);
-        margin-bottom: -20px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 </style>
