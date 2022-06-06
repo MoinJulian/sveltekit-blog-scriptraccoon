@@ -4,6 +4,10 @@
     export let metadata;
 </script>
 
+<svelte:head>
+    <title>{metadata.title}</title>
+</svelte:head>
+
 <p class="date">
     {formatDate(metadata.date)}
 </p>

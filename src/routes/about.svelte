@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Blog with SvelteKit | About</title>
+</svelte:head>
+
 <h2>About</h2>
 <p>
     This project (and its tutorial) showcases the following features

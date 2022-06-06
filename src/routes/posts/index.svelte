@@ -3,6 +3,10 @@
     export let metadatas;
 </script>
 
+<svelte:head>
+    <title>Blog with SvelteKit | Posts</title>
+</svelte:head>
+
 <h2>Posts</h2>
 
 <ol>
