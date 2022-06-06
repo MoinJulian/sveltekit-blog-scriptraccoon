@@ -4,7 +4,7 @@ import fs from "fs";
 
 export async function get({ params }) {
     const { name } = params;
-    const fileContents = fs.readFileSync(`src/posts/${name}.md`, {
+    const fileContents = fs.readFileSync(`./posts/${name}.md`, {
         encoding: "utf8",
     });
     const { metadata, content } = metadataParser(fileContents);

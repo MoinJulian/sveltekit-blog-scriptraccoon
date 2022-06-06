@@ -4,10 +4,10 @@ import metadataParser from "markdown-yaml-metadata-parser";
 export async function get() {
     const metadatas = JSON.stringify(
         fs
-            .readdirSync(`src/posts`)
+            .readdirSync(`./posts`)
             .map((fileName) => {
                 const fileContents = fs.readFileSync(
-                    `src/posts/${fileName}`,
+                    `./posts/${fileName}`,
                     {
                         encoding: "utf8",
                     }
