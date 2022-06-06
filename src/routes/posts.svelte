@@ -18,9 +18,8 @@
             <h3>{metadata.title}</h3>
             <p class="summary">{metadata.summary}</p>
             <p>
-                <a
-                    sveltekit:prefetch
-                    href="/posts/{metadata.fileName}">Read more...</a
+                <a sveltekit:prefetch href="/post/{metadata.fileName}"
+                    >Read more...</a
                 >
             </p>
         </li>
