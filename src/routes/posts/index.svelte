@@ -1,5 +1,5 @@
 <script>
-    import dateFormat from "dateformat";
+    import { formatDate } from "$lib/util.js";
     export let metadatas;
 </script>
 
@@ -9,7 +9,7 @@
     {#each JSON.parse(metadatas) as metadata}
         <li>
             <p class="date">
-                {dateFormat(metadata.date, "dd.mm.yyyy")}
+                {formatDate(metadata.date)}
             </p>
             <h3>{metadata.title}</h3>
             <p class="summary">{metadata.summary}</p>

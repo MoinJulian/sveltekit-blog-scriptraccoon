@@ -1,11 +1,11 @@
 <script>
-    import dateFormat from "dateformat";
+    import { formatDate } from "$lib/util.js";
     export let htmlContent;
     export let metadata;
 </script>
 
 <p class="date">
-    {dateFormat(metadata.date, "dd.mm.yyyy")}
+    {formatDate(metadata.date)}
 </p>
 
 {@html htmlContent}
