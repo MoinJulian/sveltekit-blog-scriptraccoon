@@ -1,15 +1,16 @@
 import { marked } from "marked";
-import metadataParser from "markdown-yaml-metadata-parser";
+import fm from "front-matter";
 import fs from "fs";
 
 export async function get({ params }) {
     const { name } = params;
-    const fileContents = fs.readFileSync(`./posts/${name}.md`, {
-        encoding: "utf8",
-    });
-    const { metadata, content } = metadataParser(fileContents);
-    const htmlContent = marked(content);
+    const fileContents = fs.readFileSync(
+        `./posts/${name}.md`,
+        "utf8"
+    );
+    const { attributes, body } = fm(fileContents);
+    const htmlContent = marked(body);
     return {
-        body: { metadata, htmlContent },
+        body: { attributes, htmlContent },
     };
 }

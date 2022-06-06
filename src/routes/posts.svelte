@@ -1,6 +1,6 @@
 <script>
     import { formatDate } from "$lib/util.js";
-    export let metadatas;
+    export let postList;
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
 <h2>Posts</h2>
 
 <ol>
-    {#each JSON.parse(metadatas) as metadata}
+    {#each JSON.parse(postList) as metadata}
         <li>
             <p class="date">
                 {formatDate(metadata.date)}

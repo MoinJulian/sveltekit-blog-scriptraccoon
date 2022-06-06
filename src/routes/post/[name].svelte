@@ -1,16 +1,16 @@
 <script>
     import { formatDate } from "$lib/util.js";
     export let htmlContent;
-    export let metadata;
+    export let attributes;
 </script>
 
 <svelte:head>
-    <title>{metadata.title}</title>
+    <title>{attributes.title}</title>
 </svelte:head>
 
 <p class="header">
     <span class="date">
-        {formatDate(metadata.date)}
+        {formatDate(attributes.date)}
     </span>
     <a href="/posts">all posts</a>
 </p>

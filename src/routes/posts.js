@@ -1,25 +1,23 @@
 import fs from "fs";
-import metadataParser from "markdown-yaml-metadata-parser";
+import fm from "front-matter";
 
 export async function get() {
-    const metadatas = JSON.stringify(
+    const postList = JSON.stringify(
         fs
             .readdirSync(`./posts`)
             .map((fileName) => {
                 const fileContents = fs.readFileSync(
                     `./posts/${fileName}`,
-                    {
-                        encoding: "utf8",
-                    }
+                    "utf8"
                 );
-                const { metadata } = metadataParser(fileContents);
+                const { attributes } = fm(fileContents);
                 return {
-                    ...metadata,
+                    ...attributes,
                     fileName: fileName.replace(".md", ""),
                 };
             })
             .sort((p, q) => (p.date < q.date ? +1 : -1))
     );
 
-    return { body: { metadatas } };
+    return { body: { postList } };
 }
