@@ -22,10 +22,11 @@
     </ul>
     <li>page endpoints</li>
     <li>server-side rendering</li>
+    <li>static site generation</li>
     <li>disabling JavaScript client-side still works</li>
     <li>the $page store</li>
     <li>prefetching pages</li>
-    <li>deployment to netlify</li>
+    <li>deployment to Netlify</li>
 </ul>
 <p>
     The blog posts are stored as <a
