@@ -3,4 +3,4 @@
   publish = "build"
 
 [functions]
-  included_files = ["files/**"]        
+  included_files = ["posts/**"]        
