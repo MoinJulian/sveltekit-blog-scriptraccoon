@@ -40,11 +40,10 @@
         font-size: 25px;
     }
     .date {
-        color: #888;
+        color: var(--gray-color);
         font-size: 16px;
     }
     .summary {
-        color: #333;
         margin: 10px 0px 0px 0px;
     }
     a {

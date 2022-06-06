@@ -12,7 +12,7 @@
 
 <style>
     .date {
-        color: #666;
+        color: var(--gray-color);
         margin-bottom: -20px;
     }
 </style>

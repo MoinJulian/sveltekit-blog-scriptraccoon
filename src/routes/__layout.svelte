@@ -18,9 +18,4 @@
         padding: 10px;
         margin: 0 auto;
     }
-
-    :global(main > h2) {
-        font-size: 30px;
-        margin: 10px 0px;
-    }
 </style>
