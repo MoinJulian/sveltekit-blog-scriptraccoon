@@ -6,7 +6,7 @@ summary: I really like Svelte. Here is why.
 
 # Svelte is great!
 
-There are several things which I really like about _Svelte_. Let me list some of them:
+There are several things that I like a lot about _Svelte_. Let me list some of them:
 
 -   It's **easy to learn**.
 -   It makes **fun** to write Svelte!
