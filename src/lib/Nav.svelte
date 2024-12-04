@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-	$: currentPath = $page.url.pathname;
+	let currentPath = $derived($page.url.pathname);
 	const pages = [
 		{ path: "/", name: "Home" },
 		{ path: "/posts", name: "Posts" },
